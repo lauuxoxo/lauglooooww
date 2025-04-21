@@ -1,0 +1,199 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #fff0f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #a86b8a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a86b8a;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #a86b8a;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #ffffff;
+    color: #a86b8a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/49b4e3d12afebec8ad1c3b4c01cdb8e7.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 20px;
+        text-align: center;
+        color: #fffdfdfa;
+      }
+
+  .Imagen{
+    width: 200px;
+    height: auto;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #a86b8a;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Estilo para sección de tips */
+  .tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+    background-color: #fffafc;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    max-width: 240px;
+    text-align: center;
+    transition: transform 0.3s ease;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: aparecer 0.8s ease forwards;
+      }
+      
+      .card:nth-child(2) { animation-delay: 0.2s; }
+      .card:nth-child(3) { animation-delay: 0.4s; }
+      .card:nth-child(4) { animation-delay: 0.6s; }
+      .card:nth-child(5) { animation-delay: 0.8s; }
+      
+      @keyframes aparecer {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+  
+  /* Sección nosotros */
+  .us{
+      background: linear-gradient(to right, #ffe0f0, #ffd5ea);
+      text-align: center;
+      padding: 40px 20px;
+      color: #6a004e;
+    
+    }
+    
+    .us h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #cc0066;
+    }
+    
+    .us p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+      /* Footer */
+    footer {
+      background: linear-gradient(to right, #eccdd3, #ffffff);
+      padding: 30px 20px;
+      text-align: center;
+      color: #4a0039;
+    }
+    
+    .footer-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #75002f;
+    }
+    
+    .footer-content p {
+      margin: 5px 0;
+    }
+    
+    .footer-content a {
+      color: #75002f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .footer-bottom {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #4a0039;
+    }
+  
+  
+  
